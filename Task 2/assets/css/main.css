@@ -1,0 +1,86 @@
+html {
+    background-image: url("../images/train.gif");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+
+
+  #triangle-up {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid red;
+  }
+
+
+  #triangle-down {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 100px solid red;
+  }
+
+
+
+ 
+.button {
+	position: relative;
+	display: inline-block;
+	padding: 0 1em;
+	line-height: 2;
+	border-bottom: 1px solid #e6ad00;
+	
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	
+	background: #ffee88;
+	background: -moz-linear-gradient(top, #ffee88, #f9d213);
+	background: -ms-linear-gradient(top, #ffee88, #f9d213);
+	background: -o-linear-gradient(top, #ffee88, #f9d213);
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(#ffee88), to(#f9d213));
+	background: -webkit-linear-gradient(top, #ffee88, #f9d213);
+	background: linear-gradient(top, #ffee88, #f9d213);
+}
+
+.button:after {
+	position: absolute;
+	content: '';
+	z-index: -1;
+	display: inline-block;
+	left: 100%;
+	top: 1em;
+	
+	width: 2em;
+	height: 2em;
+	margin-top: -1em;
+	margin-left: -1em;
+	border-right: 1px solid #e6ad00;
+	border-bottom: 1px solid #e6ad00;
+	
+	/* 
+	 * Значение масштаба взято не «с потолка»: это синус 45˚ 
+	 * (во столько раз гипотенуза равнобедренного прямоугольного треугольника 
+	 * меньше его стороны)
+	 */
+	-webkit-transform: rotate(45deg) scale(0.7071);
+	-moz-transform: rotate(45deg) scale(0.7071);
+	-ms-transform: rotate(45deg) scale(0.7071);
+	-o-transform: rotate(45deg) scale(0.7071);
+	transform: rotate(45deg) scale(0.7071);
+	
+	background: #ffee88;
+	background: -moz-linear-gradient(top left, #ffee88, #f9d213);
+	background: -ms-linear-gradient(top left, #ffee88, #f9d213);
+	background: -o-linear-gradient(top left, #ffee88, #f9d213);
+	background: -webkit-gradient(top left, 0 0, 0 100%, from(#ffee88), to(#f9d213));
+	background: -webkit-linear-gradient(top left, #ffee88, #f9d213);
+	background: linear-gradient(top left, #ffee88, #f9d213);
+}
