@@ -35,7 +35,7 @@ func robot(c *gin.Context){
 }
 
 func flagpage(c *gin.Context) {
-	c.Writer.Header().Set("FLAG", "flag{7AYxpglFFJ7TcGouDgQv4sqvP2Pwzzk}")
+	c.Writer.Header().Set("FLAG", "flag{loLKtbypAWimnD70}")
 	c.HTML(http.StatusOK, "flag.html", nil)
 }
 
