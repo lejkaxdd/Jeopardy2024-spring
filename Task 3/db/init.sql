@@ -7,7 +7,7 @@ CREATE TABLE IF NOT EXISTS uchetki (
     password VARCHAR(30) UNIQUE NOT NULL,
     PRIMARY KEY (id));
 
-INSERT INTO uchetki (username, password) VALUES ("admin", "nuhOSU7S");
+INSERT INTO uchetki (username, password) VALUES ("admin", "I0rVBBpZHSFxR24g");
 
 
 CREATE USER 'mysqldbuser'@'%' IDENTIFIED BY 'mysqldbuser$123654';

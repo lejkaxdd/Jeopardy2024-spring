@@ -74,6 +74,7 @@ func check(username string, password string) string {
 	}
 	var err error
 	db, err := sql.Open("mysql", cfg.FormatDSN())
+	defer db.Close()
 	if err != nil {
 		log.Fatal(err)
 	}
