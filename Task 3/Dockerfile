@@ -10,6 +10,6 @@ COPY . ./
 
 RUN go build -o thirdTask ./main.go
 
-# EXPOSE 8003
+EXPOSE 8003
 
 CMD ["./thirdTask"]
