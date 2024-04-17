@@ -6,16 +6,29 @@ html {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
+    background-size:cover;
     opacity: 0.9;
   }
 
+
+  .monitor {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../images/monitor.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 140px;
+  }
+
 .container {
-    left: 450px;
-    margin: 0 auto;
     width: 600px;
     height: 300px;
-    position:absolute; 
+    margin: 0 auto;
 }
 
 .container img {
@@ -23,43 +36,61 @@ html {
     max-width: 100%;
     height: auto;
     max-height: 100%;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%) translateX(5%);
+    margin: 0 auto;
 }
 
+.green {
+    content: url("../images/green.png");
+
+}
+
+.purple {
+    content: url("../images/purpule.png");
+
+}
+
+.red {
+    content: url("../images/red.png");
+
+}
+
+
+.btn-wrap {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 80px;
+}
 .btn{
     border-radius: 5px;
     background: var(--color);
     cursor: pointer;
+
+    width: 100px;
+    height: 40px;
 }
 
 .btn-1{
-    position: absolute;
+
     --color: rgb(181, 1, 1, 0.8);
-    top: 315px;
-    left: 320px;
-    width: 80px;
-    height: 67px;
 }
 
 .btn-2{
     --color: rgba(0, 128, 0, 0.8);
-    position: absolute;
-    top: 315px;
-    left: 707px;
-    width: 100px;
-    height: 67px;
 }
 
 .btn-3{
     --color: rgba(128, 37, 198, 0.8);
+<<<<<<< HEAD
+    flag: "ZmxhZ3tkQ0o0OUJWbGp4KmQwV2JRVHROI2dzY2d3Q1A5ZSVSfQ=="
+=======
     position: absolute;
     top: 433px;
     left: 1070px;
     width: 87px;
     height: 60px;
-    flag: "ZmxhZ3tkQ0o0OUJWbGp4KmQwV2JRVHROI2dzY2d3Q1A5ZSVSfQ=="
+    flag: "ZmxhZ3t3dllCcGpxTVpYT0ExazBifQ=="
+>>>>>>> 28218b12a730afffcf3963982d76de642f8bc27e
 }
 
 
