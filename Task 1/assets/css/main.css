@@ -11,7 +11,7 @@ html {
   }
 
 
-  .monitor {
+.monitor {
     width: 100vw;
     height: 100vh;
     background-image: url("../images/monitor.png");
@@ -23,7 +23,7 @@ html {
     flex-direction: column;
     justify-content: center;
     gap: 140px;
-  }
+}
 
 .container {
     width: 600px;
@@ -61,6 +61,7 @@ html {
     flex-direction: row;
     gap: 80px;
 }
+
 .btn{
     border-radius: 5px;
     background: var(--color);
