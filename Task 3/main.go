@@ -126,7 +126,8 @@ func loginpagecheck(c *gin.Context) {
 		if password == check(username, password) {
 			c.Redirect(http.StatusFound, "/static-spd/")
 		} else {
-			c.IndentedJSON(http.StatusOK, "Sorry, invalid username or password, but I remember table name: uchetki")
+			// c.IndentedJSON(http.StatusOK, "Sorry, invalid username or password, but I remember table name: uchetki")
+			c.HTML(http.StatusOK, "error.html", nil)
 		}
 	}
 	
